@@ -30,7 +30,7 @@ pip install -r requirements.txt
 - O(n) time complexity with no collision checking needed
 - Results are sorted by construction (cumulative sum)
 - Configurable number of timestamps and range
-- CSV output for generated timestamps 
+- CSV output for generated timestamps
 
 ### Run
 
@@ -72,9 +72,8 @@ Analyze timestamps from CSV files with four complementary statistical views:
    - Smooth curve indicates uniform distribution
 
 3. **Gap Distribution** - Analyzes spacing between consecutive values
-   - Shows how evenly spaced the timestamps are
-   - Mean gap should ≈ max_value / count
-   - Uniform gaps indicate good randomness
+   - Exponential gaps are used during generation to create uniform data
+   - Demonstrates the mathematical property underlying uniform distribution
 
 4. **Q-Q Plot** - Compares empirical quantiles to a theoretical uniform distribution
    - Points close to the diagonal indicate a good uniform fit
@@ -181,7 +180,6 @@ python task_3/test_calculator.py
 
 ---
 
-
 ## Summary of Files
 
 ```
@@ -200,6 +198,5 @@ python task_3/test_calculator.py
 ├── plots/                    # Generated plot images
 ├── timestamps_tasks.ipynb    # Interactive timestamp generation and analysis
 ├── requirements.txt          # Python dependencies
-├── assignment.md             # Original assignment
 └── README.md                 # This file
 ```
