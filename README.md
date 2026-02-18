@@ -106,7 +106,7 @@ Each use case loads its CSV file and generates separate plots via:
 ✅ Evaluate arithmetic expressions (+ - \* /)  
 ✅ Operator validation with helpful error messages  
 ✅ History tracking (last 5 calculations)  
-✅ Graceful error handling (division by zero, invalid syntax)
+✅ Graceful error handling (division by zero, invalid syntax)  
 ✅ Rejects any non-digit/operator/space characters (no parentheses)
 
 ### Endpoints
@@ -175,7 +175,7 @@ python task_3/test_calculator.py
 ✓ Multiple operations in one expression  
 ✓ Unsupported operators (^, etc.)  
 ✓ Invalid syntax (incomplete expressions)  
-✓ Parentheses are rejected as invalid input
+✓ Parentheses are rejected as invalid input  
 ✓ Division by zero
 
 ---
